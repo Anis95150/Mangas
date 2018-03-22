@@ -1,0 +1,88 @@
+body{
+    font-family: 'Anton', sans-serif;
+    background-color: #e0e0e0;
+}
+
+.header{
+    background: #f44336;
+    height: 4em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header div{
+    color: white;
+    letter-spacing: 1px;
+}
+
+.header div img {
+    height: 3em;
+}
+
+.recherche{
+    display: flex;
+    justify-content: center;
+}
+
+#para{
+    text-align: center;
+    font-weight: normal;
+    font-size: 2em;
+    color: #f44336; 
+}
+
+
+.red{
+    color: #f44336
+}
+
+.title{
+    color: white
+}
+
+.titre{
+    display: flex;
+    justify-content: center;
+    color: burlywood;
+}
+
+.boutton{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    margin-right: 1em;
+    background: white;
+    color:#f44336;
+}
+
+.btns{
+    background: #f44336;
+    color: white;   
+}
+
+.block{
+    display: flex;
+    justify-content: center;
+    border: 5px solid #f44336;
+    margin-top: 1em;
+}
+
+ul{
+    list-style: none;
+}
+
+.liste{
+    color: #f44336;
+    visibility: hidden;
+    animation: anis 1s linear 1s forwards;
+}
+
+
+.fini{
+    color: white;
+    visibility: hidden;
+}
+
