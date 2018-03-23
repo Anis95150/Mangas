@@ -39,8 +39,6 @@ var para = document.getElementById("para");
     }
 }
 
-
-
 var liste_mangas = ["Hunter x Hunter ",
     "My Hero Academia ",
     "One piece ",

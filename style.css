@@ -3,6 +3,12 @@ body{
     background-color: black;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .header{
     background: #f44336;
     height: 4em;
@@ -16,19 +22,144 @@ body{
     color: white;
     letter-spacing: 1px;
 }
+/* 3D */
 
-img {
-    height: 3em;
+.global{
+    width: 851px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+   
+}
+
+.container, .container2, .container3{
+    perspective: 700px;
+}
+
+
+.container, .devant, .arriere{
+    
+    height: 488px;
+    width: 716px;
+    transform-origin: 50 0;
+}
+
+.container2 , .devant2, .arriere2{
+    height: 488px;
+    width: 327px;
+    transform-origin: 50 0;
+}
+
+.container3 , .devant3, .arriere3{
+    height: 488px;
+    width: 851px;
+    transform-origin: 50 0;
+}
+
+.container:hover .page{
+    transform: rotateY(180deg);
     
 }
 
-.block .liste img {
+.page{
+    transition: 600ms;
+    transform-style: preserve-3d;
+}
+
+.devant, .arriere{
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.devant{
+    z-index: 2;
+    transform: rotate(0deg);
+    
+}
+
+.arriere {
+    transform: rotateY(180deg);
+    background: black;
+    text-align: center;
+}
+
+.container2:hover .page2{
+    transform: rotateY(180deg);
+    
+}
+
+.page2{
+    transition: 600ms;
+    transform-style: preserve-3d;
+}
+
+.devant2, .arriere2{
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.devant2{
+    z-index: 2;
+    transform: rotate(0deg);
+    
+}
+
+.arriere2 {
+    transform: rotateY(180deg);
+    background: black;
+    text-align: center;
+}
+
+.container3:hover .page3{
+    transform: rotateY(180deg);
+    
+}
+
+.page3{
+    transition: 600ms;
+    transform-style: preserve-3d;
+}
+
+.devant3, .arriere3{
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.devant3{
+    z-index: 2;
+    transform: rotate(0deg);
+    
+}
+
+.arriere3 {
+    transform: rotateY(180deg);
+    background: black;
+    text-align: center;
+}
+
+
+/* fin 3D */
+
+.header img {
     height: 3em;
+}
+
+.block .liste img {  
+    height:3em;  
     margin-left: 5px;
     margin-right: 5px;
 }
 
 .block .fini img {
+    height:3em;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -36,6 +167,7 @@ img {
 .recherche{
     display: flex;
     justify-content: center;
+    margin-bottom: 1em;
 }
 
 .cacher{
@@ -70,24 +202,32 @@ img {
 .boutton{
     display: flex;
     justify-content: center;
+    
 }
 
 .btn{
     margin-right: 1em;
     background: white;
     color:#f44336;
+    margin-bottom: 1em;
 }
 
 .btns{
     background: #f44336;
     color: white;   
+    margin-bottom: 1em;
+}
+
+h1{
+    color: white;
+    text-align:center;
 }
 
 .block{
     display: flex;
     justify-content: center;
     border: 5px solid #f44336;
-    margin-top: 1em;
+    margin-top: 3em;
 }
 
 ul{
@@ -106,3 +246,8 @@ ul{
     visibility: hidden;
 }
 
+.texte{
+    color: #f44336;
+    
+    font-size: 14px;
+}
