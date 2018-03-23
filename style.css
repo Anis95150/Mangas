@@ -1,6 +1,6 @@
 body{
     font-family: 'Anton', sans-serif;
-    background-color: #e0e0e0;
+    background-color: black;
 }
 
 .header{
@@ -9,6 +9,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border: 5px solid white;
 }
 
 .header div{
@@ -16,8 +17,20 @@ body{
     letter-spacing: 1px;
 }
 
-.header div img {
+img {
     height: 3em;
+    
+}
+
+.block .liste img {
+    height: 3em;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.block .fini img {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .recherche{
@@ -34,7 +47,7 @@ body{
 #para{
     text-align: center;
     font-weight: normal;
-    font-size: 2em;
+    font-size: 1em;
     color: #f44336; 
     visibility: hidden;
 }

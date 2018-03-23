@@ -69,7 +69,9 @@ var liste_mangas = ["Hunter x Hunter ",
     "Olive et Tom ",
     "Beelzebub ",
     "Shaman King ",
-    "Fate Stay Night"]
+    "Fate Stay Night",
+    "Toriko",
+    "Kenichi"]
 
 function filtreTexte(requete) {
 	return liste_mangas.filter(function(el) {
