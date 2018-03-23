@@ -4,29 +4,42 @@ var btn = document.querySelector(".btn");
 var btns = document.querySelector(".btns");
 var liste = document.querySelector(".liste");
 var fini = document.querySelector(".fini");
+var cacher = document.querySelector(".cacher");
+var para = document.getElementById("para");
 
 
-btn.onclick = function(){
-    if(liste.style.visibility == "visible"){
-        liste.style.visibility = "hidden";
+    btn.onclick = function(){
+        if(liste.style.visibility == "visible"){
+            liste.style.visibility = "hidden";
+        }
+
+        else{
+            liste.style.visibility = "visible"
+        }   
+    };
+
+    btns.onclick = function(){
+        if(fini.style.visibility == "visible"){
+            fini.style.visibility = "hidden";
+        }
+
+        else{
+            fini.style.visibility = "visible";
+        }
+    };
+
+    cacher.onclick = function(){
+        if(para.style.visibility == "visible"){
+            para.style.visibility = "hidden"
+        }
+
+        else{
+            para.style.visibility = "visible"
+        }
     }
-
-    else{
-        liste.style.visibility = "visible"
-    }
-    
-};
-
-btns.onclick = function(){
-    if(fini.style.visibility == "visible"){
-        fini.style.visibility = "hidden";
-    }
-
-    else{
-        fini.style.visibility = "visible";
-    }
-};
 }
+
+
 
 var liste_mangas = ["Hunter x Hunter ",
     "My Hero Academia ",
@@ -55,7 +68,8 @@ var liste_mangas = ["Hunter x Hunter ",
     "Les Chevaliers du Zodiac ",
     "Olive et Tom ",
     "Beelzebub ",
-    "Shaman King "]
+    "Shaman King ",
+    "Fate Stay Night"]
 
 function filtreTexte(requete) {
 	return liste_mangas.filter(function(el) {

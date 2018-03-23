@@ -25,11 +25,18 @@ body{
     justify-content: center;
 }
 
+.cacher{
+    margin-left: 1em;
+    color: white;
+    background: #f44336;
+}
+
 #para{
     text-align: center;
     font-weight: normal;
     font-size: 2em;
     color: #f44336; 
+    visibility: hidden;
 }
 
 
