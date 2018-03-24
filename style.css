@@ -25,12 +25,13 @@ body{
 /* 3D */
 
 .global{
-    width: 851px;
-    height: auto;
+    width: 865px;
+    height: 1503px;
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: auto;
+    border: 5px solid white;
    
 }
 
