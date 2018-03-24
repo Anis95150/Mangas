@@ -32,7 +32,6 @@ body{
     flex-direction: column;
     margin: auto;
     border: 5px solid white;
-   
 }
 
 .container, .container2, .container3{
@@ -41,7 +40,6 @@ body{
 
 
 .container, .devant, .arriere{
-    
     height: 488px;
     width: 716px;
     transform-origin: 50 0;
@@ -60,8 +58,7 @@ body{
 }
 
 .container:hover .page{
-    transform: rotateY(180deg);
-    
+    transform: rotateY(180deg); 
 }
 
 .page{
@@ -78,8 +75,7 @@ body{
 
 .devant{
     z-index: 2;
-    transform: rotate(0deg);
-    
+    transform: rotate(0deg); 
 }
 
 .arriere {
@@ -90,7 +86,6 @@ body{
 
 .container2:hover .page2{
     transform: rotateY(180deg);
-    
 }
 
 .page2{
@@ -108,7 +103,6 @@ body{
 .devant2{
     z-index: 2;
     transform: rotate(0deg);
-    
 }
 
 .arriere2 {
@@ -119,7 +113,6 @@ body{
 
 .container3:hover .page3{
     transform: rotateY(180deg);
-    
 }
 
 .page3{
@@ -136,8 +129,7 @@ body{
 
 .devant3{
     z-index: 2;
-    transform: rotate(0deg);
-    
+    transform: rotate(0deg); 
 }
 
 .arriere3 {
@@ -202,8 +194,7 @@ body{
 
 .boutton{
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 .btn{
@@ -226,7 +217,7 @@ h1{
 
 .block{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     border: 5px solid #f44336;
     margin-top: 3em;
 }
@@ -249,6 +240,5 @@ ul{
 
 .texte{
     color: #f44336;
-    
     font-size: 14px;
 }
